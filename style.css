@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    color: #fff;
+    background-color: #0c2461;
+    text-align: center;
+    padding: 5px;
+}
+h1{
+    font-size: 36px;
+}
+.container{
+    max-width: 1200px;
+    padding: 20px;
+}
+#recipe-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.recipe-item{
+    display: flex;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.recipe-item img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+.recipe-item h2 {
+    min-width: 200px;
+    padding: 10px;
+    margin: 0;
+}
+.recipe-item p {
+    color: #777;
+    font-size: larger;
+}
+.recipe-item a {
+    background-color: #0c2461;
+    color: #fff;
+    text-decoration: none;
+    font-size: x-large;
+    padding: 10px 20px;
+    transition: background 0.3 ease;
+    min-width: 150px;
+}
+.recipe-item a:hover{
+    background-color: #1540ac;
+}
+.viewbtn{
+    background-color: #0c2461;
+    color: #fff;
+    text-decoration: none;
+    font-size: x-large;
+    padding: 10px 20px;
+    transition: background 0.3 ease;
+    min-width: 150px;
+}
+.viewbtn:hover{
+    background-color: #1540ac;
+}
+@media (max-width:900px) {
+    .container{
+        max-width: 90%;
+    }
+    .recipe-item{
+        flex-direction: column;
+    }
+    .recipe-item img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .recipe-item h2 {
+        font-size: 50px;
+        margin: auto;
+        text-align: center;
+    }
+    .recipe-item a {
+        width: 100%;
+        text-align: center;
+    }
+    .viewbtn{
+        width: 100%;
+        text-align: center; 
+    }
+}
